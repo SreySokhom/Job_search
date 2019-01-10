@@ -7,7 +7,7 @@ body
 .wall
 {
 	overflow: hidden;
-	background-color: darkorchid;
+	background-color: rgb(30, 117, 63);
 }
 .div1
 {
@@ -66,4 +66,11 @@ body
 }
 .inp1{
 	background-color: blue;
+}
+.container{
+	display: grid;
+	align-items: center;
+	align-content: center;
+	
+
 }
