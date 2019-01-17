@@ -2,7 +2,9 @@
 /* CSS Document */
 body
 {
-	background-color: rgb(12, 64, 122);
+	background-color: rgb(28, 47, 107);
+	background-image: url(work5.jpg);
+	
 }
 .wall
 {
@@ -56,9 +58,10 @@ body
 {
 	width: 40%;
 	overflow: hidden;
-	background-color: rgb(29, 103, 172);
+	background-color: white;
 	margin: auto;
 	padding: 10px;
+	position:relative;
 }
 .nav_bg{
 	background-color: rgb(41, 45, 48);
@@ -72,5 +75,13 @@ body
 	align-items: center;
 	align-content: center;
 	
+
+}
+careerpic{
+position: absolute;
+	align-content: center;
+	display: grid;
+	align-items: center;
+	text-align: center;
 
 }
