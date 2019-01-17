@@ -2,7 +2,7 @@
 /* CSS Document */
 body
 {
-	background-color: rgba(195,113,197,1.00);
+	background-color: rgb(12, 64, 122);
 }
 .wall
 {
@@ -56,7 +56,7 @@ body
 {
 	width: 40%;
 	overflow: hidden;
-	background-color: white;
+	background-color: rgb(29, 103, 172);
 	margin: auto;
 	padding: 10px;
 }
