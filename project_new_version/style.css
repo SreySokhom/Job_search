@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	background-color: rgb(240, 246, 248);
+}
+.wall
+{
+	overflow: hidden;
+	background-color: green;
+}
+.div1
+{
+	text-align: center;
+	padding: 5px;
+}
+.div1 img 
+{
+	width: 60px;
+	height: 60px;
+}
+
+.nav_list ul 
+{
+	list-style-type: none;
+}
+.nav_list ul li
+{
+	float: left;
+}
+.nav_list ul li a
+{
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	padding: 20px;
+}
+.nav_list ul li a:hover{
+	color: yellow;
+}
+.new_nav
+{
+	background-color: green;
+	height: 70px;
+	padding: 10px;
+	position: relative;
+}
+.new_nav .img
+{
+	width: 50px;
+	height: 50px;
+	margin: auto;
+/*	float: right;*/
+}
+.new_nav i
+{
+	cursor: pointer;
+}
+.new_nav .img img
+{
+	width: 50px;
+	height: 50px;
+}
+/*responsive navigation */
+.sub_nav
+{
+	background-color:  green;
+	float: left;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+.sub_nav ul
+{
+	list-style-type:  none;
+	padding: 0px;
+	margin: 0;
+}
+.sub_nav ul li
+{
+	float: left;
+	width: 200px;
+}
+.sub_nav ul li a
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 15px 20px;
+}
+.sub_nav ul li:hover{
+	background-color: yellow;
+}
+.btn1{
+	padding: 20px;
+}
+
+.nav_bg{
+	background-color: rgb(41, 45, 48);
+
+}
+.inp1{
+	background-color: blue;
+}
+.div2{
+	margin: 10px;
+	background-color: #fff;
+}
+.div2 img{
+	width: 70px;
+	height: 70px;
+}
+.div3{
+	margin: 30px;
+}
+span{
+	color: gray;
+	font-size: 15px;
+}
+
+/*signin style*/
+
+.form
+{
+	width: 40%;
+	overflow: hidden;
+	background-color: white;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	font-size: 60px;
+}
+.email{
+	position: relative;
+}
+.email input{
+	padding-left: 40px;
+}
+.email i{
+	position: absolute;
+	font-size: 20px;
+	left: 10px;
+	top: 10px;
+}
+.password{
+	position: relative;
+}
+.password input{
+	padding-left: 40px;
+}
+.password i{
+	position: absolute;
+	font-size: 20px;
+	left: 10px;
+	top: 10px;
+}
+.form button
+{
+	margin: 5px;
+}
+.btn2{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	background-color: gray;
+	margin: 20px;
+}
+.img3{
+	width: 70px;
+	height: 70px;
+	margin-top: 30px;
+}
+
+/*responsive*/
+@media (min-width: 1200px) {
+	.new_nav{
+		display: none;
+	}
+	
+}
+@media (max-width: 1199.98px) {
+	.top-menu{
+		display: none;
+	}
+	.new_nav{
+		display: block;
+	}
+	.btn1{
+/*		float: left;*/
+		float: none;
+	}
+	.div1{
+		margin: auto;
+/*		display: none;*/
+	}
+}
