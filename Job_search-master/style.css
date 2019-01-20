@@ -2,12 +2,12 @@
 /* CSS Document */
 body
 {
-	background-color: rgba(195,113,197,1.00);
+	background-color: rgb(240, 246, 248);
 }
 .wall
 {
 	overflow: hidden;
-	background-color: darkorchid;
+	background-color: green;
 }
 .div1
 {
@@ -16,7 +16,6 @@ body
 }
 .div1 img 
 {
-/*	margin-left: 2rem;*/
 	width: 60px;
 	height: 60px;
 }
@@ -39,6 +38,28 @@ body
 }
 .nav_list ul li a:hover{
 	color: yellow;
+}
+.new_nav
+{
+	background-color: black;
+	height: 70px;
+	padding: 10px;
+}
+.new_nav .img
+{
+	width: 40px;
+	height: 40px;
+	margin: auto;
+/*	float: right;*/
+}
+.new_nav i
+{
+	cursor: pointer;
+}
+.new_nav .img img
+{
+	width: 40px;
+	height: 40px;
 }
 .btn1{
 	padding: 20px;
@@ -66,4 +87,52 @@ body
 }
 .inp1{
 	background-color: blue;
+}
+.div2{
+	margin: 10px;
+	background-color: #fff;
+}
+.div2 img{
+	width: 70px;
+	height: 70px;
+}
+.div3{
+	margin: 30px;
+}
+span{
+	color: gray;
+	font-size: 15px;
+}
+@media (min-width: 1200px) {
+	.new_nav{
+		display: none;
+	}
+	
+}
+@media (max-width: 1199.98px) {
+	.top-menu{
+		display: none;
+	}
+	.new_nav{
+		display: block;
+	}
+	.btn1{
+/*		float: left;*/
+		float: none;
+	}
+	.div1{
+		margin: auto;
+/*		display: none;*/
+	}
+}
+.btn2{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	background-color: gray;
+}
+.img3{
+	width: 70px;
+	height: 70px;
+	float: left;
 }
