@@ -44,11 +44,12 @@ body
 	background-color: black;
 	height: 70px;
 	padding: 10px;
+	position: relative;
 }
 .new_nav .img
 {
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	margin: auto;
 /*	float: right;*/
 }
@@ -58,8 +59,38 @@ body
 }
 .new_nav .img img
 {
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
+}
+.sub_nav
+{
+	background-color: black;
+	float: left;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+.sub_nav ul
+{
+	list-style-type:  none;
+	padding: 0px;
+	margin: 0;
+}
+.sub_nav ul li
+{
+	float: left;
+	width: 200px;
+}
+.sub_nav ul li a
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 15px 20px;
+}
+.sub_nav ul li:hover{
+	background-color: yellow;
 }
 .btn1{
 	padding: 20px;
@@ -130,9 +161,10 @@ span{
 	height: 200px;
 	text-align: center;
 	background-color: gray;
+	margin: 20px;
 }
 .img3{
 	width: 70px;
 	height: 70px;
-	float: left;
+	margin-top: 30px;
 }
