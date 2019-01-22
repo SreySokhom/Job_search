@@ -9,7 +9,7 @@ body
 .wall
 {
 	overflow: hidden;
-	background-color: rgb(30, 117, 63);
+	background-color: green;
 }
 .div1
 {
@@ -18,7 +18,6 @@ body
 }
 .div1 img 
 {
-/*	margin-left: 2rem;*/
 	width: 60px;
 	height: 60px;
 }
@@ -41,6 +40,59 @@ body
 }
 .nav_list ul li a:hover{
 	color: yellow;
+}
+.new_nav
+{
+	background-color: black;
+	height: 70px;
+	padding: 10px;
+	position: relative;
+}
+.new_nav .img
+{
+	width: 50px;
+	height: 50px;
+	margin: auto;
+/*	float: right;*/
+}
+.new_nav i
+{
+	cursor: pointer;
+}
+.new_nav .img img
+{
+	width: 50px;
+	height: 50px;
+}
+.sub_nav
+{
+	background-color: black;
+	float: left;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+.sub_nav ul
+{
+	list-style-type:  none;
+	padding: 0px;
+	margin: 0;
+}
+.sub_nav ul li
+{
+	float: left;
+	width: 200px;
+}
+.sub_nav ul li a
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 15px 20px;
+}
+.sub_nav ul li:hover{
+	background-color: yellow;
 }
 .btn1{
 	padding: 20px;
@@ -70,18 +122,52 @@ body
 .inp1{
 	background-color: blue;
 }
-.container{
-	display: grid;
-	align-items: center;
-	align-content: center;
-	
-
+.div2{
+	margin: 10px;
+	background-color: #fff;
 }
-careerpic{
-position: absolute;
-	align-content: center;
-	display: grid;
-	align-items: center;
+.div2 img{
+	width: 70px;
+	height: 70px;
+}
+.div3{
+	margin: 30px;
+}
+span{
+	color: gray;
+	font-size: 15px;
+}
+@media (min-width: 1200px) {
+	.new_nav{
+		display: none;
+	}
+	
+}
+@media (max-width: 1199.98px) {
+	.top-menu{
+		display: none;
+	}
+	.new_nav{
+		display: block;
+	}
+	.btn1{
+/*		float: left;*/
+		float: none;
+	}
+	.div1{
+		margin: auto;
+/*		display: none;*/
+	}
+}
+.btn2{
+	width: 200px;
+	height: 200px;
 	text-align: center;
-
+	background-color: gray;
+	margin: 20px;
+}
+.img3{
+	width: 70px;
+	height: 70px;
+	margin-top: 30px;
 }
