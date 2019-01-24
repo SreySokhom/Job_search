@@ -197,3 +197,12 @@ span{
 /*		display: none;*/
 	}
 }
+.text-info1{
+position:absolute;
+	top:1500px;
+
+} @important;
+.container-fluid {
+	position: fixed;
+	top:0;
+}
