@@ -28,14 +28,20 @@
 
 
 
-    const trtable=document.createElement('td')
+   // const trtable=document.createElement('td')
     //const trtable1=document.createElement('td')
-    trtable .innerText=pos;
+   // trtable .innerText=pos;
     //trtable1.innerText=com;
 
  //  tableObject.append('');
-   $("#table_body").append("<tr> <td>"+pos+"</td><td> " + com+"</td></tr>")
-  }  );
+   //$("#table_body").append("<tr> <td>"+pos+"</td><td> " + com+"</td></tr>")
+  // $("#table_body").append("<p>"+com+"</p>");
+
+    $("#table_body").append("<div><div> </div><a>"+pos+"</a><BR><span>"+com+"</span></div> </div>");
+
+}  );
+
+
   
   $(document).ready(function(){
     $('#bar').click(function(){
