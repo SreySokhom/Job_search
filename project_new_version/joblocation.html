@@ -24,7 +24,7 @@
 						<a href="joblist.html" >Job List</a>
 					</li>
 					<li>
-						<a href="jobgategory.html" >Job Category</a>
+						<a href="jobcategory.html">Job Category</a>
 					</li>
 					<li>
 						<a href="companylist.html">Company List</a>
@@ -41,11 +41,12 @@
 		</div>
 	</div>
 	
+	<!--	responesive nav-->
 	<div class="container-fluid new_nav">
-		<i class="fas fa-bars h2 text-light float-left" id="bar"></i>
+		<i class="fa fa-bars text-light float-left" id="bar"></i>
 		<a class="btn btn-success float-left ml-3 text-light" href="signin.html">SignIn</a>
 		<div class="img">
-			<img src="logo.png">
+			<a href="index.html" ><img src="logo.png"></a>
 		</div>
 		<div class="sub_nav">
 			<ul>
@@ -55,7 +56,7 @@
 			</ul>
 			<ul>
 				<li>
-					<a href="jobgategory.html">Job Category</a>
+					<a href="jobcategory.html">Job Category</a>
 				</li>
 			</ul>
 			<ul>
@@ -70,7 +71,26 @@
 			</ul>
 		</div>
 	</div>
-	
+	<div class="container job_ca">
+		<table class="table table-hover">
+			<tr>
+				<td><a class="h1 text-success">Job Location</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="h4">Phnom Penh</a></td>
+				<td><a href="#" class="h4">Battambong</a></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="h4">Kompot</a></td>
+				<td><a href="#" class="h4">Kampong Cham</a></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="h4">Kompong Som</a></td>
+				<td><a href="#" class="h4">Siem Reap</a></td>
+			</tr>
+		</table>
+	</div>
 	<script>
 		$(document).ready(function(){
 			$('#bar').click(function(){
