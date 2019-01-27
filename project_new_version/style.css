@@ -2,8 +2,8 @@
 /* CSS Document */
 body
 {
-	background-imgage: url(work5.jpg);
-	background-color: rgb(159, 203, 218);
+	
+	background-color: rgb(229, 238, 241);
 }
 .wall
 {
@@ -213,7 +213,7 @@ span{
 position:absolute;
 	top:1500px;
 
-} @important;
+}
 .container-fluid {
 	position: fixed;
 	top:0;
