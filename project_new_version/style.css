@@ -127,8 +127,11 @@ span{
 /*signin style*/
 
 .form
-{
-	width: 40%;
+{   
+	
+	width: 25%;
+	height: 400px;
+	border-radius: 3%;
 	overflow: hidden;
 	background-color: white;
 	margin: auto;
