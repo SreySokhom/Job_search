@@ -2,7 +2,9 @@
 /* CSS Document */
 body
 {
-	background-color: rgb(240, 246, 248);
+	background-color: rgb(28, 47, 107);
+	background-image: url(work5.jpg);
+	
 }
 .wall
 {
@@ -111,6 +113,7 @@ body
 	background-color: white;
 	margin: auto;
 	padding: 10px;
+	position:relative;
 }
 .nav_bg{
 	background-color: rgb(41, 45, 48);

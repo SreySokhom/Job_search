@@ -12,10 +12,10 @@
 </head>
 
 <body>
-	<div class="container-fluid wall">
+	<div class="container-fluid wall" >
 		<div class="row">
 			<div class="col-1 div1">
-				<a href="test.html"><img src="logo.png"></a>
+				<a href="test.html"><img src="IP-logo.png" width="80px" height="80px"></a>
 			</div>
 			<div class="col-9 nav_list" >
 				<ul>
@@ -35,17 +35,34 @@
 				</ul>
 			</div>
 			<div class="col-2 btn1">
-				<button class="btn btn-success">SignIn</button>
+				<button class="btn btn-success">Sign In</button>
 			</div>
 		</div>
 	
 
 	</div>
+	<!-- <div class="careerpic">
+			<img src="work5.jpg" alt="difference people and their career" width="100%"  height="100%" >	
+	
+	</div> -->
 	<div class="form">
 		
 		<input type="text" class="form-control">
 	</div>
 
+	<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyB8g-5-d551foOb185SlCDoPecJLBSNUUw",
+		authDomain: "myjobsearch-66728.firebaseapp.com",
+		databaseURL: "https://myjobsearch-66728.firebaseio.com",
+		projectId: "myjobsearch-66728",
+		storageBucket: "myjobsearch-66728.appspot.com",
+		messagingSenderId: "769008157196"
+	  };
+	  firebase.initializeApp(config);
+	</script>
 <script>
 	$(document).ready(function(){
 		$('.btn1').click(function(){

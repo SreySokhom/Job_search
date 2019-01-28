@@ -2,8 +2,8 @@
 /* CSS Document */
 body
 {
-	/*background-image: url(work5.jpg);*/	
-	background-color: rgb(240, 246, 248);
+	
+	background-color: rgb(240, 246, 248);;
 }
 .wall
 {
@@ -40,6 +40,8 @@ body
 .nav_list ul li a:hover{
 	color: yellow;
 }
+
+/*new nav bar for responsive*/
 .new_nav
 {
 	background-color: green;
@@ -57,6 +59,7 @@ body
 .new_nav i
 {
 	cursor: pointer;
+	font-size: 30px;
 }
 .new_nav .img img
 {
@@ -124,12 +127,15 @@ span{
 /*signin style*/
 
 .form
-{
-	width: 40%;
+{   
+	
+	width: 25%;
+	height: 400px;
+	border-radius: 3%;
 	overflow: hidden;
 	background-color: white;
 	margin: auto;
-	padding: 10px;
+	padding: 3%;
 	text-align: center;
 	font-size: 60px;
 }
@@ -173,8 +179,14 @@ span{
 	height: 70px;
 	margin-top: 30px;
 }
-.blue{
-	background-color: blue;
+/*job catagery*/
+.job_ca table tr:hover{
+	background-color: inherit;
+}
+
+.job_ca table tr td:hover{
+	background-color: #ccccb3;
+/*	background-color: blue;*/
 }
 
 /*responsive*/
@@ -201,3 +213,65 @@ span{
 	}
 	
 }
+.text-inhfo1{
+position:absolute;
+	top:1500px;
+
+}
+.container-fluid {
+	position: fixed;
+	top:0;
+	z-index:1;
+}
+site-blocks-cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center; }
+	.site-blocks-cover.overlay {
+	  position: relative; }
+	  .site-blocks-cover.overlay:before {
+		position: absolute;
+		content: "";
+		left: 0;
+		bottom: 0;
+		right: 0;
+		top: 0;
+		background: rgba(0, 0, 0, 0.4); }
+	.site-blocks-cover, .site-blocks-cover > .container > .row {
+	  min-height: 600px;
+	  height: calc(100vh); }
+	.site-blocks-cover.inner-page, .site-blocks-cover.inner-page > .container > .row {
+	  min-height: 400px;
+	  height: calc(30vh); }
+	.site-blocks-cover .sub-text {
+	  font-size: 1.1rem;
+	  text-transform: uppercase;
+	  color: rgba(255, 255, 255, 0.7);
+	  letter-spacing: .2em; }
+	.site-blocks-cover h1 {
+	  font-weight: 700;
+	  color: #fff;
+	  font-size: 2rem; }
+	  .site-blocks-cover h1 strong {
+		font-weight: 900; }
+	  @media (min-width: 768px) {
+		.site-blocks-cover h1 {
+		  font-size: 4rem;
+		  font-weight: 300;
+		  line-height: 1.2; } }
+	.site-blocks-cover p {
+	  color: rgba(255, 255, 255, 0.7);
+	  line-height: 1.5; }
+	  .site-blocks-cover p a {
+		color: #fff; }
+		.site-blocks-cover p a.category {
+		  padding: 2px 10px;
+		  border-radius: 4px;
+		  border: 1px solid rgba(255, 255, 255, 0.2);
+		  display: inline-block;
+		  background: rgba(255, 255, 255, 0.1); }
+		  .site-blocks-cover p a.category:hover {
+			background: rgba(255, 255, 255, 0.2); }
+	.site-blocks-cover .intro-text {
+	  font-size: 16px;
+	  line-height: 1.5; }
