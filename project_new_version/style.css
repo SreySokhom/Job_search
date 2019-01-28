@@ -173,6 +173,9 @@ span{
 	height: 70px;
 	margin-top: 30px;
 }
+.blue{
+	background-color: blue;
+}
 
 /*responsive*/
 @media (min-width: 1200px) {
@@ -196,4 +199,5 @@ span{
 		margin: auto;
 /*		display: none;*/
 	}
+	
 }
