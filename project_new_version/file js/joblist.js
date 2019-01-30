@@ -19,8 +19,9 @@
      var position = snap.child('position').val();
      var company = snap.child('company').val();
     var img=snap.child('img').val();
-     $("#div1").append(`
-     <div class="col-xl-6 col-12"   id="div1">
+    
+    //diplay data from database in firebase to div 
+     $("#div1").append(`	<div class="col-xl-4 col-12"   id="div1">
               <div class="row div2"  id="di1">
               <div class="col-3" id="di2"><img src="${img}"></div>
               <div class="col-9" id="di3">
