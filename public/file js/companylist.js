@@ -29,15 +29,20 @@
     //          </div>
     //        </div><div></div></div>`);
 
-           $("#company").append(`</div> 
-           <div class="col-xl-4 col-12">
-               <div class="row div2">
-                   <div class="col-3"><img src="${img}"></div>
-                   <div class="col-9">
-                       <a href="#">${company}</a> 
-                       <p>${location}</p>
-                   
-               </div>`);
+           $("#box").append(`
+				<div class="col-xl-6 col-md-6 col-12">
+						<div class="div2 p-2 mb-3 mx-auto">
+							<div class="row">
+								<div class="col-3 ">
+									<img src="${img}">
+								</div>
+								<div class="col-9">
+									<a href="#">${company}</a><br><span>${location}</span>
+								</div>
+							</div>
+						</div>
+					</div>	
+			`);
   });
 
 }());
