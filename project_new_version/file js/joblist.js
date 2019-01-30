@@ -1,5 +1,4 @@
  (function () {
-
    // Initialize Firebase
    var config = {
      apiKey: "AIzaSyCFW9avzV_qt3W2cARcLhMkdA5msELW2hk",
@@ -10,13 +9,14 @@
      messagingSenderId: "920751215712"
    };
    firebase.initializeApp(config);
-
    //create a variable point to root of database in firebase
    const root = firebase.database().ref().child("Job");
-
    //use on() to get data 
+	  var position="a";
+	  ;
    root.on("child_added", snap => {
-     var position = snap.child('position').val();
+     position = snap.child('position').val();
+	   document.getElementById("c").innerHTML=position
      var company = snap.child('company').val();
     var img=snap.child('img').val();
      $("#div1").append(`
