@@ -16,23 +16,18 @@
 
    //use on() to get data 
    root.on("child_added", snap => {
-		 var position = snap.child('position').val();
-		 var company = snap.child('company').val();
-		var img=snap.child('img').val();
-
-		 $("#box").append(`
-					<div class="col-6">
-						<div class="div2 p-2 mb-3">
-							<div class="row">
-								<div class="col-3 ">
-									<img src="${img}">
-								</div>
-								<div class="col-9">
-									<a href="#">${position}</a><br><span>${company}</span>
-								</div>
-							</div>
-						</div>
-					</div>				
-		`);
+     var position = snap.child('position').val();
+     var company = snap.child('company').val();
+    var img=snap.child('img').val();
+    
+    //diplay data from database in firebase to div 
+     $("#div1").append(`	<div class="col-xl-4 col-12"   id="div1">
+              <div class="row div2"  id="di1">
+              <div class="col-3" id="di2"><img src="${img}"></div>
+              <div class="col-9" id="di3">
+                <a href="" id="atag">${position}</a>
+                <p id="position">${company}</p>
+              </div>
+            </div><div></div></div>`);
    });
  }());

@@ -1,7 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-
-
 body
 {
 	
@@ -111,8 +109,7 @@ body
 	background-color: blue;
 }
 .div2{
-	width: 75%;
-	margin: auto;
+	margin: 10px;
 	background-color: #fff;
 }
 .div2 img{
@@ -278,5 +275,3 @@ site-blocks-cover {
 	.site-blocks-cover .intro-text {
 	  font-size: 16px;
 	  line-height: 1.5; }
-
-
