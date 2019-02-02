@@ -16,8 +16,8 @@
  
 	//use on() to get data 
 	root.on("child_added", snap => {
-		  var position = snap.child('position').val();
-		  var company = snap.child('company').val();
+		var position = snap.child('position').val();
+		var company = snap.child('company').val();
 		 var img=snap.child('img').val();
  
 		  $("#box").append(`
