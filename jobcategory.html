@@ -106,7 +106,8 @@
 			</tr>
 		</table>		
 	</div>
-	<h3 style="padding-left: 200px"><u> All JOB </u></h3>
+	<a href="#" style="padding-left: 200px" class="h3" id="alljob"> All JOB</a>
+<!--	<h1 style="cursor: pointer">dfd</h1>-->
 	<div style="height:4em"></div>
 	<div class="container slide">
 		<div class="row" id="jobcategory"></div>
@@ -120,29 +121,16 @@
 	//			var sub_nav=$('.sub_nav');
 				$('.sub_nav').toggle();
 			});
+//			to hide accounting job
+			$('#accounting').hide();
 			$('#account').click(function(){
-//				$('#jobcategory').remove();
-				$('#jobcategory').remove();
-				root.on("child_added", snap=>{
-				var acc=[];
-			  //  var index=[];
-			   acc.push(snap.val());
-			  if(snap.val().position=="Teacher"){
-				$("#accounting").append(` <div class="col-xl-6 col-md-6 col-12">
-				<div class="div2 p-2 mb-3 mx-auto">
-					<div class="row">
-						<div class="col-3 ">
-							<img src="${snap.val().img}">
-						</div>
-						<div class="col-9">
-							<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
-						</div>
-					</div>
-				</div>
-			</div>	 `)
-		//         console.log(acc);
-	 			}
-				})
+				$('#jobcategory').hide();
+				$('#accounting').show();
+			});
+//			to display all job back
+			$('#alljob').click(function(){
+				$('#accounting').hide();
+				$('#jobcategory').show();
 			});
 	});
 		
