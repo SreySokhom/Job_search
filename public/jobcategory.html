@@ -31,7 +31,7 @@
 						<a href="joblist.html" >Job List</a>
 					</li>
 					<li>
-						<a href="jobcategory.html">Job Category</a>
+						<a href="jobcategory.html" class="text-warning">Job Category</a>
 					</li>
 					<li>
 						<a href="companylist.html ">Company List</a>
@@ -93,7 +93,7 @@
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="#" onclick="accountingShow()" class="h4">Accounting</a></td>
+				<td><a href="#"  class="h4" id="account">Accounting</a></td>
 				<td><a href="#" class="h4">Amin/Supervisory</a></td>
 			</tr>
 			<tr>
@@ -106,22 +106,15 @@
 			</tr>
 		</table>		
 	</div>
-	<h3 style="padding-left: 200px"><u> All JOB </u></h3>
+	<a href="#" style="padding-left: 200px" class="h3" id="alljob"> All JOB</a>
+<!--	<h1 style="cursor: pointer">dfd</h1>-->
 	<div style="height:4em"></div>
 	<div class="container slide">
 		<div class="row" id="jobcategory"></div>
+		<div class="row" id="accounting"></div>
 	</div>
 	<script src="file js/jobcategory.js"></script>
 	
-	<script>
-		$(document).ready(function(){
-			$('#bar').click(function(){
-	//			var sub_nav=$('.sub_nav');
-				$('.sub_nav').toggle();
-	//			alert();
-			});
-		});
 		
-	</script>
 </body>
 </html>
