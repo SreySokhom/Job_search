@@ -21,18 +21,18 @@
 		 var img=snap.child('img').val();
  
 		  $("#box").append(`
-					 <div class="col-xl-6 col-md-6 col-12 ">
+					<a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" > <div class="col-xl-6 col-md-6 col-12 ">
 						 <div class="div2 p-2 mb-3 mx-auto shadow grow">
 							 <div class="row">
 								 <div class="col-3 ">
 									 <img src="${img}">
 								 </div>
 								  <div class="col-9">
-								  <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" >${position}</a><br><span>${company}</span>
+								  ${position}<br><span>${company}</span>
 								  
 								  </div>
 								  </div>
-								  </div>
+								  </div></a>
 								  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 								  <div class="modal-dialog modal-lg">
 								  <div class="modal-content">
