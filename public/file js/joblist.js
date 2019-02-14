@@ -21,7 +21,7 @@
 		 var img=snap.child('img').val();
  
 		  $("#box").append(`
-					<a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" > <div class="col-xl-6 col-md-6 col-12 ">
+				<a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" >	 <div class="col-xl-6 col-md-6 col-12 ">
 						 <div class="div2 p-2 mb-3 mx-auto shadow grow">
 							 <div class="row">
 								 <div class="col-3 ">

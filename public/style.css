@@ -303,7 +303,16 @@ site-blocks-cover {
 			margin: auto;
 			margin-top:-2em !important;
 				
-		}
+		}}
+		@media (max-width: 576px) {
+		
+			.iphone_input2{
+				float: none !important;
+				width: 100% !important;
+				margin: auto;
+				margin-top:1% !important;
+					
+			}
 		.job_ca #head_ca{
 			font-size: 24px;
 		}
