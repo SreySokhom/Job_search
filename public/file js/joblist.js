@@ -19,6 +19,7 @@
 		  var position = snap.child('position').val();
 		  var company = snap.child('company').val();
 		 var img=snap.child('img').val();
+		 
  
 		  $("#box").append(`
 				<a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" >	 <div class="col-xl-6 col-md-6 col-12 ">
@@ -37,7 +38,7 @@
 								  <div class="modal-dialog modal-lg">
 								  <div class="modal-content">
 								  <div class="modal-header">
-								  <h5 class="modal-title"><img src="${img}">${company} l</h5>
+								  <h5 class="modal-title"><img src="${img}">${company} </h5>
 								  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								  <span aria-hidden="true">&times;</span>
 					 </button>

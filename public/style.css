@@ -372,9 +372,23 @@ site-blocks-cover {
 			text-decoration: none;
 		  color: rgba(255, 255, 255, 0.3); }
 		  .site-footer a:hover {
-			color: #fff; }
+			color: rgb(231, 182, 19)!important; }
 		.site-footer ul li {
 		  margin-bottom: 10px; }
+		  a[class="pb-2 pr-2 pl-0 icon-facebook"]:hover{
+			  color: rgb(66, 103, 173)!important;
+
+		  }
+		  a[class="p-2 icon-twitter"]:hover{
+			color: rgb(87, 184, 240)!important;
+
+		}
+		a[class="p-2 icon-instagram"]:hover{
+			background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF)!important;
+			
+			
+
+		}
 	  
 		  .grow { transition: all .6s ease-out; }
 .grow:hover { transform: scale(1.1);
@@ -385,3 +399,4 @@ site-blocks-cover {
  .modal-title img{
 	 width: 20%;
  }
+ 
