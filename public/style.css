@@ -399,4 +399,6 @@ site-blocks-cover {
  .modal-title img{
 	 width: 20%;
  }
- 
+ tr{
+	 background: white!important;
+ }
