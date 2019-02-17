@@ -28,7 +28,6 @@
     //            <p id="position">${company}</p>
     //          </div>
     //        </div><div></div></div>`);
-
            $("#box").append(`
 				<div class="col-xl-6 col-md-6 col-12">
 						<div class="div2 p-2 mb-3 mx-auto">
