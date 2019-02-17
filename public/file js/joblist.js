@@ -37,11 +37,11 @@ var config = {
 								  </div>
 								  </div>
 								  </div></a>
-								  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								  <div class=" box modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="boxc" >
 								  <div class="modal-dialog modal-lg">
 								  <div class="modal-content">
 								  <div class="modal-header">
-								  <h5 class="modal-title"><img src="${img}">${company} </h5>
+								  <h5 class="modal-title box"><img src="${img}">${company} </h5>
 								  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								  <span aria-hidden="true">&times;</span>
 					 </button>
