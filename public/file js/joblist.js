@@ -13,16 +13,21 @@
  
 	//create a variable point to root of database in firebase
 	const root = firebase.database().ref().child("Job");
+
+	const root1=firebase.database().ref().child("CompanyDes");
+	 
  
 	//use on() to get data 
 	root.on("child_added", snap => {
-		  var position = snap.child('position').val();
-		  var company = snap.child('company').val();
+		var position = snap.child('position').val();
+		var company = snap.child('company').val();
 		 var img=snap.child('img').val();
-		 
- 
-		  $("#box").append(`
-				<a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" >	 <div class="col-xl-6 col-md-6 col-12 ">
+		 var des=snap.child('des').val();
+		 var location=snap.child('location').val();
+		 var DL=snap.child('deadline').val();
+		 console.log(des);
+		 		  $("#box").append(`
+				   <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" > <div class="col-xl-6 col-md-6 col-12 ">
 						 <div class="div2 p-2 mb-3 mx-auto shadow grow">
 							 <div class="row">
 								 <div class="col-3 ">
@@ -30,7 +35,7 @@
 								 </div>
 								  <div class="col-9">
 								  ${position}<br><span>${company}</span>
-								  
+								  <br><span><b><u>${DL}</u></b></span>
 								  </div>
 								  </div>
 								  </div></a>
@@ -47,13 +52,10 @@
 					 <h2>Please read carefully about the job detail <span class="text-info h1">!</span></h2>
 				 </div>
 				 <div class="p-3 m-2 bg-success text-white h5">Company description</div>
-				 <div class="mx-2  text-justify">
-					 Nippon Express  continue  expand  globe, achieving  five-point framework across Japan,  Americas  Europe,  stretching into  rapidly developing markets  East Asia, South Asia  Oceania. We see our  as  logistics consultant, providing one-stop business solutions that connect people  companies beyond national  regional boundaries, through diverse logistics modes, integrating land, air,  marine transport  current 43 Countries 262 Cities 700 Locations 20,741 Employees.  
-					 With dynamic  business growing, our Nippon Express (Cambodia) Co,Ltd. has now seeking highly qualified processional  fill  the  below:
-				 </div>
+				 <div class="mx-2  text-justify">${des}</div>
 				 <div class="p-3 m-2 bg-success text-white h5">Announcement Position</div>
-				 <div class="text-success h5 mx-2">Accountant <hr></div>
-				 <div class="mx-2"><i class="fas fa-map-marker-alt"></i> Location: Mean Chey, Phnom Penh</div>
+				 <div class="text-success h5 mx-2">${position} <hr></div>
+				 <div class="mx-2"><i class="fas fa-map-marker-alt"></i> Location: ${location}</div>
 				 <div class="mx-2"><i class="far fa-calendar-alt"></i> Schedule: Full time</div>
 				 <div class="mx-2"><i class="fas fa-dollar-sign"></i> Salary: N/A</div>
 				 <div class="text-success h6 mx-2">Resposibilities</div>
@@ -103,18 +105,13 @@
 						 <i class="fas fa-envelope"></i> dara.vivork@gmail.com
 					 </div>
 					 <div class="modal-footer">
-		 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		 <button type="button" class="btn btn-primary">Apply</button>
+					 
 	   </div>
 	 </div>
 				 </div>
 			 </div>
-		 </div>
-	 
-	 
-									 
-						 
-					 </div>				
-		 `);
+		 </div>								 
+			 </div> `);
+
 	});
   }());

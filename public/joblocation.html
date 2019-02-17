@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
 		<script src="jquery-3.2.1.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
 </head>
 
 <body>
@@ -80,19 +81,34 @@
 		<table class="table table-hover">
 
 			<tr>
-				<td><a href="#" class="h4">Phnom Penh</a></td>
-				<td><a href="#" class="h4">Battambong</a></td>
+				<td><a href="#" class="h4" id="pp">Phnom Penh</a></td>
+				<td><a href="#" class="h4" id="bat">Battambong</a></td>
 			</tr>
 			<tr>
-				<td><a href="#" class="h4">Kompot</a></td>
+				<td><a href="#" class="h4" id="kp">Kompot</a></td>
 				<td><a href="#" class="h4">Kampong Cham</a></td>
 			</tr>
 			<tr>
 				<td><a href="#" class="h4">Kompong Som</a></td>
 				<td><a href="#" class="h4">Siem Reap</a></td>
 			</tr>
+			<tr>
+				<td>	<a href="#"  class="h3" id="locationjob">All Places: </a></td>
+			</tr>
 		</table>
+		
 	</div>
+
+<div style="height:4em"></div>
+	<div class="container slide">
+		<div class="row" id="location1"></div>
+		<div class="row" id="p-p"></div>
+		<div class="row" id="kom"></div>
+	</div>
+
+
+	<script src="file js/joblocation.js"> </script>
+
 	<script>
 		$(document).ready(function(){
 			$('#bar').click(function(){
