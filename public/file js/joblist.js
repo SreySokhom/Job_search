@@ -22,6 +22,7 @@
 		var position = snap.child('position').val();
 		var company = snap.child('company').val();
 		 var img=snap.child('img').val();
+		 var img2=snap.child('img').val();
 		 var des=snap.child('des').val();
 		 var location=snap.child('location').val();
 		 var DL=snap.child('deadline').val();
@@ -39,11 +40,11 @@
 								  </div>
 								  </div>
 								  </div></a>
-								  <div class=" box modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="boxc" >
+								  <div class=" box modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
 								  <div class="modal-dialog modal-lg">
 								  <div class="modal-content">
 								  <div class="modal-header">
-								  <h5 class="modal-title box"><img src="${img}">${company} </h5>
+								  <h5 class="modal-title "><img src="${img}">${company} </h5>
 								  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								  <span aria-hidden="true">&times;</span>
 					 </button>
