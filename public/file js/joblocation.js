@@ -65,6 +65,88 @@ var config = {
 				</div>	 `)
 					 }
 					})
+
+					root.on("child_added", snap=>{
+						var acc=[];
+					  //  var index=[];
+					   acc.push(snap.val());
+					  if(snap.val().location=="Battambong"){
+						  console.log(snap.val.location);
+						$("#btb").append(` <div class="col-xl-6 col-md-6 col-12">
+						<div class="div2 p-2 mb-3 mx-auto">
+							<div class="row">
+								<div class="col-3 ">
+									<img src="${snap.val().img}">
+								</div>
+								<div class="col-9">
+									<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+								</div>
+							</div>
+						</div>
+					</div>	 `)
+						 }
+						})
+						root.on("child_added", snap=>{
+							var acc=[];
+						  //  var index=[];
+						   acc.push(snap.val());
+						  if(snap.val().location=="kompong cham"){
+							  console.log(snap.val.location);
+							$("#KPC").append(` <div class="col-xl-6 col-md-6 col-12">
+							<div class="div2 p-2 mb-3 mx-auto">
+								<div class="row">
+									<div class="col-3 ">
+										<img src="${snap.val().img}">
+									</div>
+									<div class="col-9">
+										<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+									</div>
+								</div>
+							</div>
+						</div>	 `)
+							 }
+							})
+							root.on("child_added", snap=>{
+								var acc=[];
+							  //  var index=[];
+							   acc.push(snap.val());
+							  if(snap.val().location=="kompong som"){
+								  console.log(snap.val.location);
+								$("#KPS").append(` <div class="col-xl-6 col-md-6 col-12">
+								<div class="div2 p-2 mb-3 mx-auto">
+									<div class="row">
+										<div class="col-3 ">
+											<img src="${snap.val().img}">
+										</div>
+										<div class="col-9">
+											<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+										</div>
+									</div>
+								</div>
+							</div>	 `)
+								 }
+								})
+								root.on("child_added", snap=>{
+									var acc=[];
+								  //  var index=[];
+								   acc.push(snap.val());
+								  if(snap.val().location=="Siem Reap"){
+									  console.log(snap.val.location);
+									$("#SR").append(` <div class="col-xl-6 col-md-6 col-12">
+									<div class="div2 p-2 mb-3 mx-auto">
+										<div class="row">
+											<div class="col-3 ">
+												<img src="${snap.val().img}">
+											</div>
+											<div class="col-9">
+												<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+											</div>
+										</div>
+									</div>
+								</div>	 `)
+									 }
+									})
+						
   }());
 
 
@@ -77,21 +159,74 @@ $(document).ready(function(){
 //			to hide accounting job
 			$('#p-p').hide();
 			$('#kom').hide();
-			console.log("sdfg");
+			$('#btb').hide();
+			$('#KPC').hide();
+			$('#KPS').hide();
+			$('#SR').hide();
+			
+			
 
 			$('#pp').click(function(){
 				$('#p-p').show();
 				$('#kom').hide();
+				$('#btb').hide();
+				$('#KPC').hide();
+				$('#KPS').hide();
+				$('#SR').hide();
 				$('#location1').hide();
-				console.log("world");
+			
 			});
 //			to display all job back
 			$('#kp').click(function(){
 				$('#p-p').hide();
 				$('#kom').show();
+				$('#btb').hide();
+				$('#KPC').hide();
+				$('#KPS').hide();
+				$('#SR').hide();
 				$('#location1').hide();
-				console.log("hello");
+			
 			});
 			//to diplay edu job
 		
+			$('#bat').click(function(){
+				$('#p-p').hide();
+				$('#kom').hide();
+				$('#btb').show();
+				$('#KPC').hide();
+				$('#KPS').hide();
+				$('#SR').hide();
+				$('#location1').hide();
+			
+			});
+			$('#kpc').click(function(){
+				$('#p-p').hide();
+				$('#kom').hide();
+				$('#btb').hide();
+				$('#KPC').show();
+				$('#KPS').hide();
+				$('#SR').hide();
+				$('#location1').hide();
+			
+			});
+			$('#kps').click(function(){
+				$('#p-p').hide();
+				$('#kom').hide();
+				$('#btb').hide();
+				$('#KPC').hide();
+				$('#KPS').show();
+				$('#SR').hide();
+				$('#location1').hide();
+			
+			});
+			$('#sr').click(function(){
+				$('#p-p').hide();
+				$('#kom').hide();
+				$('#btb').hide();
+				$('#KPC').hide();
+				$('#KPS').hide();
+				$('#SR').show();
+				$('#location1').hide();
+			
+			});
 	});
