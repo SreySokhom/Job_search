@@ -35,10 +35,11 @@
 								 </div>
 								  <div class="col-9">
 								  <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" >${position}</a><br><span>${company}</span>
-								  <br><span><b><u>${DL}</u></b></span>
+								  <br><span> Post: <b><u>${DL}</u></b></span>
 								  </div>
 								  </div>
 								  </div>
+
 								  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 								  <div class="modal-dialog modal-lg">
 								  <div class="modal-content">
