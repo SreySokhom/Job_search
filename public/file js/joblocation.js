@@ -20,7 +20,8 @@ var config = {
                     <img src="${snap.val().img}">
                 </div>
                 <div class="col-9">
-                    <a href="#">${snap.val().company}</a><br><span>${snap.val().location}</span>
+										<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+										<br>	<span> ${snap.val().location}</span>
                 </div>
             </div>
         </div>
@@ -38,6 +39,7 @@ var config = {
 						</div>
 						<div class="col-9">
 							<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+							<br>	<span> ${snap.val().location}</span>
 						</div>
 					</div>
 				</div>
@@ -59,6 +61,7 @@ var config = {
 							</div>
 							<div class="col-9">
 								<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+								<br>	<span> ${snap.val().location}</span>
 							</div>
 						</div>
 					</div>
@@ -80,6 +83,7 @@ var config = {
 								</div>
 								<div class="col-9">
 									<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+									<br>	<span> ${snap.val().location}</span>
 								</div>
 							</div>
 						</div>
@@ -100,6 +104,7 @@ var config = {
 									</div>
 									<div class="col-9">
 										<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+										<br>	<span> ${snap.val().location}</span>
 									</div>
 								</div>
 							</div>
@@ -120,6 +125,7 @@ var config = {
 										</div>
 										<div class="col-9">
 											<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+										<br>	<span> ${snap.val().location}</span>
 										</div>
 									</div>
 								</div>
@@ -140,6 +146,7 @@ var config = {
 											</div>
 											<div class="col-9">
 												<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+												<br>	<span> ${snap.val().location}</span>
 											</div>
 										</div>
 									</div>
