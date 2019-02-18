@@ -75,35 +75,35 @@ var config = {
                     //   to display jobcatagery
                       root.on("child_added",snap=>{
                         //var allData=[];
-                        $("#jobcategory").append(` <div class="col-xl-6 col-md-6 col-12">
+                        $("#jobcategory").append(` <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" ><div class="col-xl-6 col-md-6 col-12">
                         <div class="div2 p-2 mb-3 mx-auto">
                             <div class="row">
                                 <div class="col-3 ">
                                     <img src="${snap.val().img}">
                                 </div>
                                 <div class="col-9">
-                                    <a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+${snap.val().company}<br><span>${snap.val().position}</span>
                                 </div>
-                            </div>
+
                         </div>
-                    </div>	 `)
+                    </div>	 </a>`)
                       })
                               //   to display only accounting job
                         root.on("child_added", snap=>{
                             
                             if(snap.val().position=="Accounting " || snap.val().position=="Various Positiion"){
-                                $("#accounting").append(` <div class="col-xl-6 col-md-6 col-12">
+                                $("#accounting").append(`  <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" ><div class="col-xl-6 col-md-6 col-12">
                                 <div class="div2 p-2 mb-3 mx-auto">
                                     <div class="row">
                                         <div class="col-3 ">
                                             <img src="${snap.val().img}">
                                         </div>
                                         <div class="col-9">
-                                            <a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+${snap.val().company}<br><span>${snap.val().position}</span>
                                         </div>
                                     </div>
-                                </div>
-                            </div>	 `)
+
+                            </div>	 </a>`)
                             }
                         })
                                 //display only advisory job
@@ -111,20 +111,21 @@ var config = {
                                     var acc=[];
                                   //  var index=[];
                                    acc.push(snap.val());
-                                  if(snap.val().position=="Teacher"){
+                                  if(snap.val().position=="Various Positiion"){
                                       console.log(snap.val.position);
-                                    $("#education").append(` <div class="col-xl-6 col-md-6 col-12">
+                                    $("#education").append(`  <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" ><div class="col-xl-6 col-md-6 col-12">
                                     <div class="div2 p-2 mb-3 mx-auto">
                                         <div class="row">
                                             <div class="col-3 ">
                                                 <img src="${snap.val().img}">
                                             </div>
                                             <div class="col-9">
-                                                <a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+${snap.val().company}<br><span>${snap.val().position}</span>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>	 `)
+                                    
+                                </div>	 
+                               </a> `)
                                      }
                                     })
                   }());

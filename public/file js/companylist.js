@@ -36,10 +36,10 @@
 									<img src="${img}">
 								</div>
 								<div class="col-9">
-									<a href="#">${company}</a><br><span>${location}</span>
+${company}<br><span>${location}</span>
 								</div>
 							</div>
-						</div>
+						
 					</div>	
 			`);
   });

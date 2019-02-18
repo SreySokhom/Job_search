@@ -20,10 +20,10 @@ var config = {
                     <img src="${snap.val().img}">
                 </div>
                 <div class="col-9">
-                    <a href="#">${snap.val().company}</a><br><span>${snap.val().location}</span>
+                  ${snap.val().company}<br><span>${snap.val().location}</span>
                 </div>
             </div>
-        </div>
+        
     </div>	</a> `)
       })
 	  		 // to display only pp
@@ -37,10 +37,10 @@ var config = {
 							<img src="${snap.val().img}">
 						</div>
 						<div class="col-9">
-							<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+							${snap.val().company}<br><span>${snap.val().position}</span>
 						</div>
 					</div>
-				</div>
+			
 			</div>	 </a>`)
 			}
 		})
@@ -58,10 +58,10 @@ var config = {
 								<img src="${snap.val().img}">
 							</div>
 							<div class="col-9">
-								<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+								${snap.val().company}<br><span>${snap.val().position}</span>
 							</div>
 						</div>
-					</div>
+					
 				</div>	</a> `)
 					 }
 					})
@@ -79,9 +79,9 @@ var config = {
 									<img src="${snap.val().img}">
 								</div>
 								<div class="col-9">
-									<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+									${snap.val().company}<br><span>${snap.val().position}</span>
 								</div>
-							</div>
+							
 						</div>
 					</div></a>	 `)
 						 }
@@ -99,10 +99,10 @@ var config = {
 										<img src="${snap.val().img}">
 									</div>
 									<div class="col-9">
-										<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+										${snap.val().company}<br><span>${snap.val().position}</span>
 									</div>
 								</div>
-							</div>
+							
 						</div>	 </a>`)
 							 }
 							})
@@ -119,10 +119,10 @@ var config = {
 											<img src="${snap.val().img}">
 										</div>
 										<div class="col-9">
-											<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+											${snap.val().company}<br><span>${snap.val().position}</span>
 										</div>
 									</div>
-								</div>
+								
 							</div>	 </a>`)
 								 }
 								})
@@ -139,9 +139,9 @@ var config = {
 												<img src="${snap.val().img}">
 											</div>
 											<div class="col-9">
-												<a href="#">${snap.val().company}</a><br><span>${snap.val().position}</span>
+												${snap.val().company}<br><span>${snap.val().position}</span>
 											</div>
-										</div>
+										
 									</div>
 								</div>	 </a>`)
 									 }
