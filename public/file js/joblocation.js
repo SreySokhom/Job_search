@@ -13,8 +13,8 @@ var config = {
 	//   to display all location
       root.on("child_added",snap=>{
         //var allData=[];
-        $("#location1").append(` <div class="col-xl-6 col-md-6 col-12">
-        <div class="div2 p-2 mb-3 mx-auto">
+        $("#location1").append(`  <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" > <div class="col-xl-6 col-md-6 col-12">
+        <div class="div2 p-2 mb-3 mx-auto shadow grow">
             <div class="row">
                 <div class="col-3 ">
                     <img src="${snap.val().img}">
@@ -24,14 +24,14 @@ var config = {
                 </div>
             </div>
         </div>
-    </div>	 `)
+    </div>	</a> `)
       })
 	  		 // to display only pp
 		root.on("child_added", snap=>{
 			
 			if(snap.val().location=="Phnom Penh" ){
-				$("#p-p").append(` <div class="col-xl-6 col-md-6 col-12">
-				<div class="div2 p-2 mb-3 mx-auto">
+				$("#p-p").append(`   <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" ><div class="col-xl-6 col-md-6 col-12">
+				<div class="div2 p-2 mb-3 mx-auto shadow grow">
 					<div class="row">
 						<div class="col-3 ">
 							<img src="${snap.val().img}">
@@ -41,7 +41,7 @@ var config = {
 						</div>
 					</div>
 				</div>
-			</div>	 `)
+			</div>	 </a>`)
 			}
 		})
 				//display only advisory job
@@ -51,8 +51,8 @@ var config = {
 				   acc.push(snap.val());
 				  if(snap.val().location=="kompot"){
 					  console.log(snap.val.location);
-					$("#kom").append(` <div class="col-xl-6 col-md-6 col-12">
-					<div class="div2 p-2 mb-3 mx-auto">
+					$("#kom").append(`   <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" ><div class="col-xl-6 col-md-6 col-12">
+					<div class="div2 p-2 mb-3 mx-auto shadow grow">
 						<div class="row">
 							<div class="col-3 ">
 								<img src="${snap.val().img}">
@@ -62,7 +62,7 @@ var config = {
 							</div>
 						</div>
 					</div>
-				</div>	 `)
+				</div>	</a> `)
 					 }
 					})
 
@@ -72,8 +72,8 @@ var config = {
 					   acc.push(snap.val());
 					  if(snap.val().location=="Battambong"){
 						  console.log(snap.val.location);
-						$("#btb").append(` <div class="col-xl-6 col-md-6 col-12">
-						<div class="div2 p-2 mb-3 mx-auto">
+						$("#btb").append(`   <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" ><div class="col-xl-6 col-md-6 col-12">
+						<div class="div2 p-2 mb-3 mx-auto shadow grow">
 							<div class="row">
 								<div class="col-3 ">
 									<img src="${snap.val().img}">
@@ -83,7 +83,7 @@ var config = {
 								</div>
 							</div>
 						</div>
-					</div>	 `)
+					</div></a>	 `)
 						 }
 						})
 						root.on("child_added", snap=>{
@@ -92,8 +92,8 @@ var config = {
 						   acc.push(snap.val());
 						  if(snap.val().location=="kompong cham"){
 							  console.log(snap.val.location);
-							$("#KPC").append(` <div class="col-xl-6 col-md-6 col-12">
-							<div class="div2 p-2 mb-3 mx-auto">
+							$("#KPC").append(`   <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" ><div class="col-xl-6 col-md-6 col-12">
+							<div class="div2 p-2 mb-3 mx-auto shadow grow">
 								<div class="row">
 									<div class="col-3 ">
 										<img src="${snap.val().img}">
@@ -103,7 +103,7 @@ var config = {
 									</div>
 								</div>
 							</div>
-						</div>	 `)
+						</div>	 </a>`)
 							 }
 							})
 							root.on("child_added", snap=>{
@@ -112,8 +112,8 @@ var config = {
 							   acc.push(snap.val());
 							  if(snap.val().location=="kompong som"){
 								  console.log(snap.val.location);
-								$("#KPS").append(` <div class="col-xl-6 col-md-6 col-12">
-								<div class="div2 p-2 mb-3 mx-auto">
+								$("#KPS").append(`  <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" > <div class="col-xl-6 col-md-6 col-12">
+								<div class="div2 p-2 mb-3 mx-auto shadow grow">
 									<div class="row">
 										<div class="col-3 ">
 											<img src="${snap.val().img}">
@@ -123,7 +123,7 @@ var config = {
 										</div>
 									</div>
 								</div>
-							</div>	 `)
+							</div>	 </a>`)
 								 }
 								})
 								root.on("child_added", snap=>{
@@ -132,8 +132,8 @@ var config = {
 								   acc.push(snap.val());
 								  if(snap.val().location=="Siem Reap"){
 									  console.log(snap.val.location);
-									$("#SR").append(` <div class="col-xl-6 col-md-6 col-12">
-									<div class="div2 p-2 mb-3 mx-auto">
+									$("#SR").append(`   <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" ><div class="col-xl-6 col-md-6 col-12">
+									<div class="div2 p-2 mb-3 mx-auto shadow grow">
 										<div class="row">
 											<div class="col-3 ">
 												<img src="${snap.val().img}">
@@ -143,7 +143,7 @@ var config = {
 											</div>
 										</div>
 									</div>
-								</div>	 `)
+								</div>	 </a>`)
 									 }
 									})
 						
@@ -152,10 +152,10 @@ var config = {
 
 //jquery code
 $(document).ready(function(){
-			$('#bar').click(function(){
-	//			var sub_nav=$('.sub_nav');
-				$('.sub_nav').toggle();
-			});
+	// 		$('#bar').click(function(){
+	// //			var sub_nav=$('.sub_nav');
+	// 			$('.sub_nav').toggle();
+	// 		});
 //			to hide accounting job
 			$('#p-p').hide();
 			$('#kom').hide();
@@ -230,3 +230,4 @@ $(document).ready(function(){
 			
 			});
 	});
+	
