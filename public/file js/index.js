@@ -132,9 +132,9 @@ var config = {
                 
                 //jquery code
                 $(document).ready(function(){
-                            $('#bar').click(function(){
-                    //			var sub_nav=$('.sub_nav');
-                                $('.sub_nav').toggle();
+                      $('#bar').click(function(){
+                    		var sub_nav=$('.sub_nav');
+                             $('.sub_nav').toggle();
                             });
                 //			to hide accounting job
                             $('#accounting').hide();
